@@ -34,6 +34,7 @@ final class Connection implements ConnectionInterface
             'timeout'  => $this->options->getTimeout(),
             'cookies'  => true,
             'debug'    => $this->options->getIsDebug(),
+            'verify' => false,
         ]);
 
         $this->initializeCsrfTokensAndSession();
